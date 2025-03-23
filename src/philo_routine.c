@@ -6,7 +6,7 @@
 /*   By: gmontoro <gmontoro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/21 10:25:23 by gmontoro          #+#    #+#             */
-/*   Updated: 2025/03/22 14:26:01 by gmontoro         ###   ########.fr       */
+/*   Updated: 2025/03/23 15:44:51 by gmontoro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	*ft_ph_ro(void *args)
 
 	philo = (t_philo *)args;
 	if (philo->id % 2 == 0)
-		ft_usleep(10);
+		ft_usleep(100);
 	while (ft_check_alive(philo))
 	{
 		ft_eat(philo);
